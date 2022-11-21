@@ -271,5 +271,7 @@ function gameOver() {
     general.classList.add("generalshow")
   grade.innerHTML = score;
   gamefinish.play()
+  music.pause();
+    music.loop = false 
   }
 }
