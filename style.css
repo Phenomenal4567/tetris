@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin: 20% 10%;
+  align-items: start;
+  gap: 50px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ddd;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: green;
+}
+.clear {
+  background-color: transparent;
+}
+
+.mini-grid {
+  height: 80px;
+  width: 80px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.allBtns{
+  display: flex;
+  height: 30vh;
+  margin-left: 30px;
+}
+
+.btnsright{
+  align-self: center;
+}
+
+.btn {
+  font-size: 50px;
+  color: #ddd;
+}
+
+button[type="submit"] {
+  border-radius: 50%;
+  padding: 10px;
+  border: 3px solid #fff;
+}
+
+.fa-rotate-right {
+  padding: 10px;
+  display: flex;
+  border-radius: 50%;
+  font-size: 90px;
+  color: #ddd;
+  border: 3px solid #fff;
+}
+
+.rotate{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.fa-play {
+  display: none;
+}
+
+.scoreDisplay h3, .levelDisplay {
+  font-size: 24px;
+  margin: 20px 0;
+  padding: 10px 0;
+  color: #fff;
+  position: relative;
+  border: 2px solid #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scoreDisplay #score {
+  align-self: center;
+  position: absolute;
+}
+
+.play {
+  border: 2px solid #fff;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: transparent;
+}
+
+.playnone {
+  display: none;
+}
+
+.pause {
+  display: none;
+}
+.pauseShow {
+  display: block;
+  border: 2px solid #fff;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: transparent;
+}
+
+.endGame{
+  display: none;
+}
+
+.general{
+  display: none;
+}
+
+.generalshow{
+  display: grid;
+    place-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #2c5864;
+  color: #fff;
+  padding: 20px;
+}

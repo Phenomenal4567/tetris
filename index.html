@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <audio id="music">
+      <source src="./sounds/music.mp3" />
+    </audio>
+     <audio id="drop">
+      <source src="./sounds/drop.mp3" />
+    </audio>
+
+      <div class="general">
+      <div class="content">
+        <h1>GAME OVER</h1>
+        <h1>Your score is: <span id="grade">0</span></h1>
+        <h2>Refresh your browser to Play again</h2>
+      </div>
+      </div>
+
+
+    <div class="container">
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+      <div class="taken"></div>
+    </div>
+              <section>
+              <section>
+    <button >
+      <span class="play" id="startBtn"><i class="fa-solid fa-play"> </i> 
+      </span>
+  <span id="pauseBtn" class="pause">
+      <i class="fa-solid fa-pause"></i>
+      </span>
+   
+</button>
+    </section>
+    <div class="mini-grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+       <section class="scoreDisplay">
+       <h3>score: <span id="score">0</span></h3>
+ </section>
+       <section class="levelDisplay">
+       <h3>level: <span id="level">1</span></h3>
+ </section>
+    </div>
+          </section>
+    
+
+    </div>
+  <div class="allBtns">
+    
+   <div class="btnsleft">
+    <button  type="submit"><i onclick="left()" class=" btn fa-solid fa-circle-left"></i></button>
+       </div>
+    
+   <div class="btnsright">
+    <button  type="submit"><i onclick="down()" class="btn fa-solid fa-circle-down"></i>
+</button>
+       </div>
+ 
+
+       <div class="btns">
+    <button type="submit">
+          <i onclick="right()" class="btn fa-solid fa-circle-right"></i>
+    </button>
+      
+       </div>
+   <div class="rotate">
+    <button >    
+    <i onclick="rotate()" class="fa-solid fa-rotate-right "></i></button>
+       </div>
+       
+  </div>
+  
+  <h6 style=" font-size:17px; color:red; text-align: center;"> <span style="font-family: 'Courgette', cursive;">Designed and built by </span><br /><a href="https://wa.me/message/KH2LRJFYI45KG1" target="_blank" style="text-decoration:none; color: rgb(113,206,250);">Devphenomenal</a></h6>
+  </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/845e4e838f.js" crossorigin="anonymous"></script>
+  </body>
+</html>
