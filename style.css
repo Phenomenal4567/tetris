@@ -171,3 +171,27 @@ h6{
 .hide-preloader {
 display: none;
 }
+
+
+.begin{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #2c5864;
+  color: #fff;
+  padding: 20px;
+  z-index: 6666;
+}
+.beginshow{
+  z-index: -6666;
+  display: none;
+}
+
+
+#startBtnTwo{
+  color: #ffd;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid #333;
+}
