@@ -8,7 +8,7 @@ body {
 
 .container {
   display: flex;
-  margin: 20% 10%;
+  margin:15% 10% 20% 10%;
   align-items: start;
   gap: 50px;
 }
