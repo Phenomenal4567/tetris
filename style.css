@@ -32,7 +32,7 @@ button {
 }
 
 .tetromino {
-  background-color: violet;
+  background-color: Violet;
 }
 .clear {
   background-color: transparent;
@@ -154,4 +154,20 @@ button[type="submit"] {
   background-color: #2c5864;
   color: #fff;
   padding: 20px;
+}
+
+h6{
+  position: relative;
+  bottom: 75px;
+}
+
+.preloader {
+  height: 100vh;
+  background-color: #ccc;
+  display: grid;
+  place-content: center;
+  transition: all 0.3s linear;
+}
+.hide-preloader {
+display: none;
 }
