@@ -19,7 +19,7 @@ let score = 0;
 let levels = 0;
 
 // colors
-const colors = ["orange", "red", "blue", "green", "purple"];
+const colors = ["orange", "red", "blue", "green", "yellow"];
 // the tetrominos
 const lTetromino = [
   [1, width + 1, width * 2 + 1, 2],
