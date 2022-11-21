@@ -7,6 +7,7 @@ const levelDisplay = document.querySelector("#level");
 const startBtn = document.querySelector("#startBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
 
+const gamefinish = document.getElementById("gamefinish");
 const music = document.getElementById("music");
 const drop = document.getElementById("drop");
 
@@ -269,5 +270,6 @@ function gameOver() {
    let grade = document.querySelector("#grade")
     general.classList.add("generalshow")
   grade.innerHTML = score;
+  gamefinish.play()
   }
 }
