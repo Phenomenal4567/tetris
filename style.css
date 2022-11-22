@@ -55,7 +55,7 @@ button {
 .allBtns{
   display: flex;
   height: 30vh;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .btnsright{
@@ -63,7 +63,7 @@ button {
 }
 
 .btn {
-  font-size: 50px;
+  font-size: 45px;
   color: #ddd;
 }
 
@@ -77,21 +77,20 @@ button[type="submit"] {
   padding: 10px;
   display: flex;
   border-radius: 50%;
-  font-size: 90px;
+  font-size: 80px;
   color: #ddd;
   border: 3px solid #fff;
 }
 
 .rotate{
   margin-top: 50px;
-  margin-left: 20px;
 }
 
 .fa-play {
   display: none;
 }
 
-.scoreDisplay h3, .levelDisplay {
+.scoreDisplay, .levelDisplay {
   font-size: 24px;
   margin: 20px 0;
   padding: 10px 0;
@@ -208,5 +207,24 @@ display: none;
   padding: 0;
   align-items: start;
   gap: 50px;
+}
+
+.scoreDisplay , .levelDisplay {
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  padding: 5px 0 5px;
+  color: #fff;
+  position: relative;
+  border: 2px solid #fff;
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+}
+.scoreDisplay #score {
+  align-self: end;
+  
 }
 }
