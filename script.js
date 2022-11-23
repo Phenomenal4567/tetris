@@ -200,7 +200,7 @@ startBtnTwo.addEventListener("click", () => {
     draw();
     music.play();
     music.loop = true 
-    timerId = setInterval(down, 400);
+    timerId = setInterval(down, 500);
   }
   nextRandom = Math.floor(Math.random() * theTetrominos.length);
   displayShape();
@@ -221,7 +221,7 @@ startBtn.addEventListener("click", () => {
     draw();
     music.play();
     music.loop = true 
-    timerId = setInterval(down, 400);
+    timerId = setInterval(down, 500);
   }
   nextRandom = Math.floor(Math.random() * theTetrominos.length);
   displayShape();
@@ -240,7 +240,7 @@ pauseBtn.addEventListener("click", () => {
     draw();
     music.play();
     music.loop = true 
-    timerId = setInterval(down, 400);
+    timerId = setInterval(down, 500);
   }
   nextRandom = Math.floor(Math.random() * theTetrominos.length);
   displayShape();
