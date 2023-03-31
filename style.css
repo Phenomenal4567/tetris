@@ -196,7 +196,7 @@ display: none;
   padding: 15px;
   border: 2px solid #333;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 420px) {
   body {
   margin: 0 30% 20% 0;
   background-color: #222;
